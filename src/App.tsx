@@ -5,7 +5,6 @@ import {
   BadgeCheck,
   Building2,
   Check,
-  ChevronDown,
   Clock3,
   Factory,
   Home,
@@ -18,6 +17,7 @@ import {
   X,
   Zap,
 } from "lucide-react";
+import NetlifyContactForm from "./NetlifyContactForm";
 
 const navItems = [
   { label: "Services", href: "#services" },
