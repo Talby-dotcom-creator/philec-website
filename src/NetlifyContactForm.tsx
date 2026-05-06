@@ -89,12 +89,7 @@ export default function NetlifyContactForm() {
           Sorry, something went wrong. Please call Phil directly on 07863 327300.
         </p>
       )}
-      {status === null && (
-        <p className="mt-5 text-sm leading-6 text-slateBody">
-          {/* ...existing info text... */}
-          This enquiry form needs connecting before the website goes live. Calls and email links are ready to use.
-        </p>
-      )}
+      {status === null && null}
       <button
         type="submit"
         className="mt-6 inline-flex min-h-11 w-full items-center justify-center gap-2 bg-navy px-5 py-3 text-sm font-extrabold text-white transition hover:bg-blue-600 sm:w-auto"
