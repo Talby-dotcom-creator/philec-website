@@ -447,52 +447,8 @@ function Contact() {
             <ContactLine icon={Phone} label="Mobile" href="tel:07863327300" value="07863 327300" />
           </div>
         </div>
-        <form className="border border-slate-200 bg-soft p-5 shadow-sm sm:p-8" aria-label="Enquiry form">
-          <div className="grid gap-5 sm:grid-cols-2">
-            <label className="grid gap-2 text-sm font-bold text-navy">
-              Name
-              <input className="field" name="name" autoComplete="name" required />
-            </label>
-            <label className="grid gap-2 text-sm font-bold text-navy">
-              Phone
-              <input className="field" name="phone" type="tel" autoComplete="tel" required />
-            </label>
-            <label className="grid gap-2 text-sm font-bold text-navy">
-              Email
-              <input className="field" name="email" type="email" autoComplete="email" />
-            </label>
-            <label className="grid gap-2 text-sm font-bold text-navy">
-              Postcode
-              <input className="field" name="postcode" autoComplete="postal-code" />
-            </label>
-            <label className="relative grid gap-2 text-sm font-bold text-navy sm:col-span-2">
-              Type of work
-              <select className="field appearance-none" name="type" defaultValue="Domestic">
-                <option>Domestic</option>
-                <option>Commercial</option>
-                <option>Industrial</option>
-                <option>Testing / Inspection</option>
-                <option>Fault / Repair</option>
-                <option>Other</option>
-              </select>
-              <ChevronDown className="pointer-events-none absolute bottom-3.5 right-4 text-slate-400" size={18} aria-hidden="true" />
-            </label>
-            <label className="grid gap-2 text-sm font-bold text-navy sm:col-span-2">
-              Message
-              <textarea className="field min-h-36 resize-y" name="message" required />
-            </label>
-          </div>
-          <p className="mt-5 text-sm leading-6 text-slateBody">
-            This enquiry form needs connecting before the website goes live. Calls and email links are ready to use.
-          </p>
-          <button
-            type="submit"
-            className="mt-6 inline-flex min-h-11 w-full items-center justify-center gap-2 bg-navy px-5 py-3 text-sm font-extrabold text-white transition hover:bg-blue-600 sm:w-auto"
-          >
-            Send Enquiry
-            <ArrowRight size={18} aria-hidden="true" />
-          </button>
-        </form>
+
+        <NetlifyContactForm />
       </div>
     </section>
   );
